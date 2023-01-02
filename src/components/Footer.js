@@ -1,6 +1,6 @@
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import {  Col } from "react-bootstrap";
+// import logo from "../assets/img/logo.svg";
+// import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
@@ -20,14 +20,14 @@ export const Footer = () => {
                   <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                     elit,Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="footer-social-icon">
+                {/* <div class="footer-social-icon">
                   <Col size={12} sm={4} className="text-center text-sm-end">
                     <div className="social-icon">
                       <a href="#"><img src={navIcon2} alt="Icon" /></a>
                       <a href="#"><img src={navIcon3} alt="Icon" /></a>
                     </div>
                   </Col>
-                </div>
+                </div> */}
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -39,9 +39,9 @@ export const Footer = () => {
                   <li><a href="#home">Home</a></li>
                   <li><a href="#about">about</a></li>
                   <li><a href="#skills">Our Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact us</a></li>
+                  <li><a href="/">Contact</a></li>
+                  <li><a href="/">About us</a></li>
+                  <li><a href="/">Contact us</a></li>
                   <li><a href="https://cargoexpress.taicloud.net/">Track Shipment</a></li>
                 </ul>
               </div>
