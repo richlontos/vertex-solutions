@@ -29,7 +29,7 @@ export const Contact = () => {
         message: ''
     }
     const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [status, setStatus] = useState({});
+    // const [status, setStatus] = useState({});
 
     const onFormUpdate = (category, value) => {
         setFormDetails({
@@ -38,18 +38,18 @@ export const Contact = () => {
         })
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
 
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(formDetails),
-        });
+    //     let response = await fetch("http://localhost:5000/contact", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json;charset=utf-8",
+    //         },
+    //         body: JSON.stringify(formDetails),
+    //     });
 
-    };
+    // };
     return (
         <section className="contact" id="connect">
             <Container>
@@ -66,7 +66,7 @@ export const Contact = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Get In Touch</h2>
-                                    <form onSubmit={handleSubmit}>
+                                    <form onSubmit={sendEmail}>
                                         <Row>
                                             <Col size={12} sm={6} className="px-1">
                                                 <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -84,12 +84,12 @@ export const Contact = () => {
                                                 <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                                                 <button type="submit"><span>Send</span></button>
                                             </Col>
-                                            {
+                                            {/* {
                                                 status.message &&
                                                 <Col>
                                                     <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                                 </Col>
-                                            }
+                                            } */}
                                         </Row>
                                     </form>
                                 </div>}

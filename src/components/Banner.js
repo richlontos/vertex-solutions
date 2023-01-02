@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img1.svg";
+// import headerImg from "../assets/img/header-img1.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import floatPic from "../assets/img/floatPic.png";
 import 'animate.css';
@@ -46,6 +46,7 @@ export const Banner = () => {
             setDelta(300);
         } else {
             setIndex(prevIndex => prevIndex + 1);
+            index()
         }
     }
 
