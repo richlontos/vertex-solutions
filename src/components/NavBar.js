@@ -4,8 +4,8 @@ import logo from './data/images/logo.png'
 
 // import logo from '../assets/img/logo.svg';
 // import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+// import navIcon2 from '../assets/img/nav-icon2.svg';
+// import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
     BrowserRouter as Router
@@ -30,9 +30,9 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value);
-    }
+    // const onUpdateActiveLink = (value) => {
+    //     setActiveLink(value);
+    // }
 
     return (
         <Router>
