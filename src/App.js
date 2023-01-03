@@ -4,15 +4,15 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Test from './pages/Test';
 import CarriersTab from './pages/CarriersTab';
-// import HomeServices from './pages/HomeServices';
+import HomeServices from './pages/HomeServices';
 // import LTLServices from './pages/HomeServices';
 // import RailServices from './pages/RailServices';
 // import AirServices from './pages/AirServices';
 // import OceanServices from './pages/OceanServices';
 // import VolumesServices from './pages/VolumeServices';
 // import WarehouseServices from './pages/WarehouseServices';
-// import WhatOffer from './pages/WhatOffer';
-// import Faq from './pages/Faq';
+import WhatOffer from './pages/WhatOffer';
+import Faq from './pages/Faq';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import Home from './pages/Home';
@@ -25,9 +25,19 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} /> */}
         <Route path='carriers' element={<CarriersTab />} />
         <Route path="/test" element={<Test />} />
+        <Route path='/services' element={<HomeServices />} />
+        <Route path='/offer' element={<WhatOffer />} />
+        <Route path='/faq' element={<Faq />} /> 
+        {/* <Route path='/servicesLTL' element={<LTLServices />} />
+        <Route path='/WarehouseServices' element={<WarehouseServices />} />
+        <Route path='/RailServices' element={<RailServices />} />
+        <Route path='/AirServices' element={<AirServices />} />
+        <Route path='/OceanServices' element={<OceanServices />} />
+        <Route path='/VolumePartial' element={<VolumesServices />} />
+        */}
       </Routes>
       <Footer />
     </div>
