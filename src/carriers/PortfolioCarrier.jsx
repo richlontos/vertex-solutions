@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Heading } from "../common/Heading"
+// import { Heading } from "../common/Heading"
 import { portfolio } from "../data/dummydata"
 // import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined"
 
