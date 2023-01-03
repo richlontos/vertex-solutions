@@ -18,11 +18,11 @@ import { Col, Row } from "react-bootstrap";
 
 
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    marginRight: theme.spacing(1),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   button: {
+//     marginRight: theme.spacing(1),
+//   },
+// }));
 
 function getSteps() {
   return [
@@ -325,7 +325,7 @@ export const TestimonialsCarrier = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   }
-  const classes = useStyles();
+  // const classes = useStyles();
   const [activeStep, setActiveStep] = useState(0);
   const [skippedSteps, setSkippedSteps] = useState([]);
   const steps = getSteps();
@@ -390,7 +390,7 @@ export const TestimonialsCarrier = () => {
           <form className="formStyle">{getStepContent(activeStep)}
 
             <Button
-              className={classes.button}
+              // className={classes.button}
               disabled={activeStep === 0}
               color="secondary"
               onClick={handleBack}
@@ -399,7 +399,7 @@ export const TestimonialsCarrier = () => {
             </Button>
             {/* {isStepOptional(activeStep) && (
             <Button
-              className={classes.button}
+              // className={classes.button}
               variant="contained"
               color="primary"
               onClick={handleSkip}
@@ -408,7 +408,7 @@ export const TestimonialsCarrier = () => {
             </Button> */}
           )}
             <Button
-              className={classes.button}
+              // className={classes.button}
               variant="contained"
               color="primary"
               onClick={handleNext}
